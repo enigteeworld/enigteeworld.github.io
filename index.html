@@ -174,7 +174,7 @@ div.relative {
 /* The hero 
   image */
 .hero {
-  background-image: url('usesecond.jpg');
+  background-image: url('currentuse.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -205,8 +205,26 @@ div.relative {
   transform: translate(-50%, -50%);
   color: white;
   transform-style: preserve-3d;
+  }
+header:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
+header:after {
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+  
 /* The animation code */
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes pop-in {
   0% {
     opacity: 0;
@@ -218,9 +236,16 @@ div.relative {
   }
 }
 
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+
 .animate-pop-in {
-    animation: pop-in .6s ease-out forwards;
-    opacity: 0;
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
 }
 </style>
 </head>
