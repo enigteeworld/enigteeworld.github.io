@@ -6,10 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
   body, html {
     height: 100%;
-    overflow-x: hidden; /* Hide scrollbars */
+    
+    
    
   }
  
@@ -18,20 +27,29 @@ div.relative {
   position: relative;
   left: 140px;
   padding-top: 70px;
- 
+  overflow-x: hidden;
+  font-family: 'Vollkorn', serif;
+  
   }
   div.relative2 {
     position: relative;
-    left: 130px;
+    left: 135px;
     padding-top: 70px;
-    color: #0000FF;
+    color: #00BCD4;
+    overflow-x: hidden;
+    font-family: 'Vollkorn', serif;
+    
     }
   
-div.container-image {
+  div.container-image {
+      
   position: relative;
-  left: 97px;
+  left: 110px;
   padding: 40px;
+ overflow-x: hidden;
+     
   }
+  
   span {
         display: inline-block;
         border-bottom: 1px solid grey;
@@ -41,10 +59,59 @@ div.container-image {
   .main {
       background-color: #000000;
       height: 70%;
-      
+      overflow-x: hidden;
+      font-family: 'Vollkorn', serif;
            
   }
+  .main2 {
+      background-color: white;
+      overflow-x: hidden;
+      font-family: 'Vollkorn', serif;
+  }
 
+  .main3 {
+      background-color: white;
+      overflow-x: hidden;
+      font-family: 'Vollkorn', serif;
+  }
+  .main4 {
+      background-color: #d3d3d3;
+      overflow-x: hidden;
+      font-family: 'Vollkorn', serif;
+  }
+  .main6 {
+      background-color: white;
+      overflow-x: hidden;
+      font-family: 'Vollkorn', serif;
+  }
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 1px; /* Place the button at the bottom of the page */
+  right: 1px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+ 
+
+
+
+
+  
 
 /* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
 /* Animation: https://daneden.github.io/animate.css/ */
@@ -53,9 +120,10 @@ div.container-image {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   bottom: 25px;
-  left: 0;
+  top: 240px;
+  left: 120px;
   right: 0;
 }
 .arrow-1{
@@ -85,8 +153,8 @@ div.container-image {
   border: 2px solid #006064;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 4px;
+  left: 4px;
 }
 
 .arrow-2 i.fa{
@@ -145,7 +213,7 @@ div.container-image {
 /* The hero 
   image */
 .hero {
-  background-image: url('usesecond.jpg');
+  background-image: url('currentuse.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -175,8 +243,27 @@ div.container-image {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  transform-style: preserve-3d;
+  }
+header:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
+header:after {
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+  
 /* The animation code */
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes pop-in {
   0% {
     opacity: 0;
@@ -188,14 +275,35 @@ div.container-image {
   }
 }
 
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+
 .animate-pop-in {
-    animation: pop-in .6s ease-out forwards;
-    opacity: 0;
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
 }
 </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-200304034-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-200304034-1');
+</script>
+
 </head>
 <body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up"></i></button>
 
+  
   <div class="hero">
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -255,13 +363,12 @@ div.container-image {
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-
   
   <div class="hero-text">
     <h1 class="header-title animate-pop-in">EnigTeeWorld FASTEST RISING TECH HUB </h1>
   </div>
 
-<div class="arrow-container animated fadeInDown">
+<div class="arrow-container animated fadeInDown" href=".main2">
   <div class="arrow-2">
     <i class="fa fa-angle-down"></i>
   </div>
@@ -271,10 +378,146 @@ div.container-image {
   </div>
   
   <div class="main">
+<div class="relative"> <p style=" font-size: 10px;   color:#00BCD4;"> <b>HELLO THERE</b> </p> </div>
+    <p style="position:relative; left:100px;"> <span style="color:white">WE ARE EnigTeeWorld</span> </p>
+    <p style="position:relative; left:40px; color:white;"> Enigteeworld located at No 15 Obakhavaye</p>
+    <p style="position:relative; left:70px; color:white;"> Oba market Ringroad Benin City</p>
+    <p style="position:relative; left:50px; color:white;">At EnigteeWorld we offer services ranging</p>
+    <p style="position:relative; left:49px; color:white;">Sales of laptops, laptop repairs, Software</p>
+    <p style="position:relative; left:100px; color:white;">Installations and more</p>
 
   </div>
+    <div class="main2">
+<div class="relative2">
+  <p style="font-size:13px;">WHAT WE DO</p>
+</div>
+<p style="position:relative;  left:30px; font-size:25px;"> When it comes to anything </p>
+<p style="position:relative; left:5px; font-size:25px;">computer and computer related</p>
+<p style="position:relative; left:100px;"> <span style="font-size:25px;"> we've got you </span> </p>
+<div class="container-image">
+  <img src="ClipartKey_1188251.png" width="50" height="50"  alt="profile.png">
+</div>
+  <p style="position:relative; left:125px;"><strong>Laptop Repairs</strong></p>
+<p style="position:relative; left:42px;">We specialize in fixing laptops/computers</p>
+<p style="position:relative; left:55px;">both software and hardware issues</p>
+
+<div class="container-image">
+  <img src="graphics.png" width="50" height="50" alt="graphics.png">
+  </div>
+<p style="position:relative; left:121px;"><b>Graphics Design</b></p>
+<p style="position:relative; left:55px;">Outstanding graphics design creation</p>
+<div class="container-image">
+  <img src="laptopsale.png" width="50" height="50" alt="laptopsale.png">
+  </div>
+<p style="position:relative; left:122px;"><b>Sales of Laptops</b></p>
+<p style="position:relative; left:15px;">We deal on sales of all kinds of laptops/computers</p>
+
+<div class="container-image">
+  <img src="videoedit.png" width="50" height="50" alt="videoedit.png">
+ </div>
+<p style="position:relative; left:129px;"><b>Video Editing</b></p>
+<p style="position:relative; left:15px;">All forms of professional video and picture editing</p>
+
+    </div>
+    </div>
+
+
+<div class="main6"></div>
+<div class="main3">
+
+      <h3 style="position:relative; top:20px;  text-align:left; background:#FF0000;color:white;"><b>Popular deals</b> </h3>
+      
+		    
+
+<div class="row">
+  <div class="column">
+    <a href="https://enigterry.github.io/img1.html"><img src="1.jpg" alt="hp" style="width:100%" <p>Lenovo Ideapad I...</p> <p> &#8358; 174,000</p> </a>
+  </div>
+  <div class="column">
+    <img src="2.jpg" alt="lenovo laptop" style="width:100%" <p>Hp STREAM 11 INTEL</p> <p>CELERON 4GB RAM 32G...</p> <p> &#8358; 138,900</p> 
+  </div>
+  <div class="column">
+    <img src="msi1-1.jpg" alt="msid" style="width:100%" <p> Msi GAMING TITAN GT75</p> <p> Intel Core I7 256GB...</p> <p> &#8358; 795,000 </p>
+	 </div>
+	 <div class="column">
+	   <img src="3.jpg" alt="lenovo yoga" style="width:100%" <p> Lenovo YOGA C7</p> <p> &#8358; 371,000 </p>
+  </div>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</div>
   
-  <script>
+</div>
+    <div class="main4">
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://3-238-204-52.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      
+      </div>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+</footer>
+     
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+    <script>
     /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -284,6 +527,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-  </script>
+    </script>
+
+    <script id="dsq-count-scr" src="//3-238-204-52.disqus.com/count.js" async></script>
 </body>
 </html>
