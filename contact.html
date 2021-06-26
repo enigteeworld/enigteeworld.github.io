@@ -24,6 +24,32 @@
   .main2 {
       font-family: 'Vollkorn', serif;
   }
+
+  
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00BCD4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
       
  /* The hero 
   image */
@@ -34,6 +60,32 @@
   background-size: cover;
   width: 100%;
   
+}
+
+
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00BCD4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Style inputs */
@@ -105,8 +157,7 @@ input[type=submit]:hover {
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
-    </div>
-  <a href="#">Contact</a>
+    </div> 
   <a href="#">About</a>
   <a href="https://enigteeworld.github.io/contact.html">Contact</a>
   <style>
@@ -125,7 +176,7 @@ input[type=submit]:hover {
 }
 
 /* The navigation menu links */
-.sidenav a .dropdown  {
+.sidenav a , .dropdown {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -135,7 +186,7 @@ input[type=submit]:hover {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav .dropdown:hover .dropbtn  a:hover {
+.sidenav .dropdown:hover .dropbtn a:hover {
   color: #f1f1f1;
 }
 
