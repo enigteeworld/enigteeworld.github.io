@@ -96,7 +96,17 @@ input[type=submit]:hover {
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="enigteeworld.github.io">Home</a>
-  <a href="#">Services</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    </div>
+  <a href="#">Contact</a>
   <a href="#">About</a>
   <a href="https://enigteeworld.github.io/contact.html">Contact</a>
   <style>
@@ -115,7 +125,7 @@ input[type=submit]:hover {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a .dropdown  {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -125,7 +135,7 @@ input[type=submit]:hover {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav .dropdown:hover .dropbtn  a:hover {
   color: #f1f1f1;
 }
 
@@ -136,6 +146,31 @@ input[type=submit]:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00BCD4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
