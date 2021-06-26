@@ -98,6 +98,13 @@ input[type=text], select, textarea {
   resize: vertical;
   background-color: inherit;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 1px solid #00BCD4;
 }
 
 input[type=submit] {
