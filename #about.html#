@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>EnigTeeWorld</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  body, html {
+    height: 100%;
+    font-family: 'Vollkorn', serif;
+  }
+
+.main {
+    background-color: #f1f1f1;
+    font-family: 'Vollkorn', serif;
+   
+}
+.container2 {
+    position: relative;
+    padding: 20px;
+    font-family: 'Vollkorn', serif;
+}
+</style>
+</head>
+<body>
+  <div class="main">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="enigteeworld.github.io">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Laptops</a>
+      <a href="#">Graphics Design</a>
+      <a href="#">Web Design</a>
+    </div>
+    </div> 
+  <a href="#">About</a>
+  <a href="https://enigteeworld.github.io/contact.html">Contact</a>
+  <style>
+    /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a , .dropdown {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .dropdown:hover .dropbtn a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #818181;
+  padding: 1px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+  </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<div class="container">
+  <div style="text-align:center">
+    <h3 style="color:#00BCD4; font-family: 'Vollkorn',serif;">EnigTeeWorld</h3>
+    <p><span style="display:inline-block; border-bottom:1px solid #00BCD4; padding-bottom: 10px;  color:#00BCD4; font-family: 'Vollkorn', serif;">What We Offer</span> </p> 
+  </div>
+</div>  
+
+<ul>
+      <li> Sales of laptops at highly discounted prices</li>
+      <li> Laptop repairs, software installations, programming and installations</li>
+      <li> Exclusive online shopping deals on laptops and all related gadgets on the website</li>
+      <li> Graphics desiging: Printing of all kinds of posters, billboards and banner</li>
+      <li> Classes for interested individuals on Web development, Python, Front/Back end specializations</li>
+      <li>Expert opinions and consultations to enable you pick that device that suits your needs</li>
+      <li>All forms of professional video editing</li>
+    </ul>
+    <div class="w3-container w3-white"><h3><strong> EnigTeeWorld</strong> </h3> <img src="austin-chan-ukzHlkoz1IE-unsplash.jpg" alt="the sign" style="width:100%">
+      <p> <strong>LOOKING FOR A PLACE TO GET THAT QUALITY POSTER, BANNER DONE? </strong> </p>
+      <p> <strong>OR YOU JUST BEEN LOOKING FOR WHERE TO BUY THAT COMPUTER YOU WANT AT DISCOUNTED PRICES OR TO FIX THAT YOUR LAPTOP/COMPUTER, OR JUST A PLACE TO GET ALL YOUR COMPUTER RELATED WORK DONE? THEN </strong> </p>
+      <p> <strong> EnigTeeWorld IS THE PLACE FOR YOU </strong> </p>
+    </div> 
+</div> 
+
+<div class="container2">
+  <div style="text-align:center">
+    <img src="contactpic.jpg" alt="Avatar" width="50" height="50" style="border-radius:50%;" >
+    <p><b>Terry Onaiwu</b></p>
+    <p>CEO EnigTeeWorld</p>
+    <p>Web Designer, Graphics Designer. A passionate lover of life and nature</p>
+  </div>
+</div>
+  
+
+  <script>
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</body>
+</html>
