@@ -188,34 +188,29 @@
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 50%;
+  
   
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-}
+},
 
 /* Place text in the middle of the image */
 .hero-text {
+ align-items: center;
+  display: flex;
+  font-size: 18px;
+  height: 43vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 100px;
   color: white;
 }
-  .header class {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  transform-style: preserve-3d;
-  }
+ 
 header:before {
   animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
 }
