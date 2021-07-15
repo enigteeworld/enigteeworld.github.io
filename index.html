@@ -1,37 +1,60 @@
-
-<!DOCTYPE html>
-<html>
-<title>Uzumaki</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3./2.1/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css font-awesome.min.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <title>EnigTeeWorld - Sales Of Laptops, Laptop Repairs, Web Design, Graphics Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+<meta name="description" content="EnigTeeWorld is a tech hub that deals on sales of laptops/computer, laptop repairs, Graphics design. We also design and create websites, 24/7 support line">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
-
+<script data-ad-client="ca-pub-1735148900887755" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
-				
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body, html {
+    height: 100%;
+    font-family: 'Vollkorn', serif;
+    
+   
+  }
+  .container {
+      position: relative;
+      padding: 20px;
+  }
+  
+  
+  .main {
+      background-color: #000000;
+      font-family: 'Vollkorn', serif;
+      .container {
+	  position: relative;
+	  padding: 20px;
+      }
+  }
+  #section2 {
+      background-color: white;
+      font-family: 'Vollkorn', serif;
+      .container {
+	  position: relative;
+	  padding: 20px;
+      }
+  }
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("uzum.jpg");
-  min-height: 100%;
-}
+  .main3 {
+      background-color: white;
+      font-family: 'Vollkorn', serif;
+  }
+  .main4 {
+      background-color: #d3d3d3;
+      font-family: 'Vollkorn', serif;
+  }
+  
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -52,224 +75,452 @@ body, html {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-</style>
-<body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:white"></i></button>
-				<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HOW IT WORKS</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> AFFILIATE</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PLANS</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  
-  <a href="#team" onclick="w3_close()"
-  class="w3-bar-item w3-button">ABOUT US</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">HOW IT WORKS</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Uzumaki</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Uzumaki</span><br>
-    <span class="w3-large">Affiliate</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Invest today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-				<div style="text-align:left">
-  <h3><b>Join Uzumaki today!</b></h3>
-  <p style="color:#088F8F">A platform that rewards you for doing almost nothing! just invest and let us grow your money for you, and get double your investment money. Get started now!</p>
-  <h3><b>Take advantage of our binary payment systems!</b></h3>
-  <p style="color:#088F8F">If making money is the goal, then you've come to the right place. Invest and using our binary systems, we grow your money for you on a daily basis! </p>
-  <h3><b>Enjoy swift and instant payment!</b></h3>
-  <p style="color:#088F8F">You get to cash out exactly 30 days after registration getting double your investment money</p>
-  </div>
-  </div>
-  
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px; text-align:center;">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Requirements!</h3>
-      <p>A smart phone<br>Access to internet<br> A social media account to share sponsored post<br>Bank account to withdraw your money</p>
-   
-    </div>
-  </div>
-</div>
-
-
-          
-
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PLANS</h3>
-   <p class="w3-large">Choose a package</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Standard</li>
-        <li class="w3-padding-16">NGN<b>14,000</b> </li>
-        <li class="w3-padding-16">$1.9 daily viral share</li>
-        <li class="w3-padding-16">$50 monthly</li>
-        <li class="w3-padding-16">$3 per referal</li>
-       
-        <li class="w3-light-grey w3-padding-24">
-        				<button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Premium</li>
-        <li class="w3-padding-16">NGN<b>28,000</b> </li>
-        <li class="w3-padding-16">$4 dialy viral share</li>
-        <li class="w3-padding-16">$120 monthly</li>
-        <li class="w3-padding-16"><b>$8 per referral</li>
-  
-        <li class="w3-light-grey w3-padding-24">
-        				<button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-teal w3-xlarge w3-padding-48">Platinum</li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b><b></li>
-        <li class="w3-padding-16">
-          
-        <li class="w3-light-grey w3-padding-24">
-        				<button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-silver w3-xlarge w3-padding-48">Gold</li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16">
-          
-        <li class="w3-light-grey w3-padding-24">
-        				<button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Ruby</li>
-        <li class="w3-padding-16"><b</b</li>
-        
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b></li>
-        <li class="w3-padding-16"><b></b> </li>
-        <li class="w3-padding-16">
-
-        <li class="w3-light-grey w3-padding-24">
-        				<button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-				<h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-officialw3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  
-</footer>
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+
+
+
+
+  
+
+/* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
+/* Animation: https://daneden.github.io/animate.css/ */
+
+.arrow-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  top: 280px;
+  right: 5px;
+
+}
+.arrow-1{
+  width: 100px;
+  height: 100px;
+  background: #00BCD4;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: relative;
+       
 }
 
+.arrow-2{
+  width: 60px;
+  height: 60px;
+  background: #00BCD4;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: table;
+  overflow-x: hidden;
+  }
+.arrow-2:before{
+  width: 52px;
+  height: 52px;
+  content: "";
+  border: 2px solid #006064;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = 
-document.getElementById("mySidebar");
+.arrow-2 i.fa{
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #006064;
+}
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 0;
   }
 }
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
+@keyframes zoomIn { 
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 0;
+  }
 }
+
+.zoomIn {
+   -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+
+
+
+  
+/* The hero 
+  image */
+.hero {
+  background-image: url('zedda.jpg');
+  background-repeat: no-repeat;
+  background-positon: center;
+  background-size: cover;
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+}
+  
+header:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+header:after {
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+  
+/* The animation code */
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-200304034-1">
 </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-200304034-1');
+</script>
+<script data-ad-client="ca-pub-1735148900887755" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up"></i></button>
+
+  
+  <div class="hero">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+<div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Laptops</a>
+      <a href="#">Graphics Design</a>
+      <a href="#">Web Design</a>
+    </div>
+    </div>
+    
+  <a href="https://enigteeworld.github.io/about.html">About</a>
+  
+  <a href="https://enigteeworld.github.io/contact.html">Contact</a>
+  <style>
+    /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a , .dropdown  {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .dropdown:hover .dropbtn a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #818181;
+  padding: 1px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  
+<div class="container">
+  <div style="text-align:center">
+    <h1 class="header-title animate-pop-in" style="color:white">EnigTeeWorld<br> FASTEST RISING TECH HUB </h1>
+  </div>
+</div>
+  
+
+<a href="#section2" class="arrow-container animated fadeInDown">
+  <div class="arrow-2">
+    <i class="fa fa-angle-down"></i>
+  </div>
+  <div class="arrow-1 animated hinge infinite zoomIn"></div>
+</a>
+  
+  </div>
+  <div class="main">
+  <div class="container">
+    <div style="text-align:center">
+ <p style=" font-size: 10px; color:#00BCD4;"> <b>HELLO THERE</b> </p>
+    <p> <span style="display:inline-block; border-bottom:1px solid #00BCD4; padding-bottom:10px; color:white">WE ARE EnigTeeWorld</span> </p>
+    <p style="color:white;"> Enigteeworld located at No 15 Obakhavaye</p>
+    <p style="color:white;"> Oba market Ringroad Benin City</p>
+    <p style="color:white;">At EnigteeWorld we offer services ranging</p>
+    <p style="color:white;">Sales of laptops, laptop repairs, Software</p>
+    <p style="color:white;">Installations and more</p>
+
+<script defer src="https://widget.tochat.be/bundle.js?key=0f039334-fc0d-44f2-bfe8-2de86639af08"></script>
+    
+    </div>
+  </div>
+  </div>
+  <div class="main2" id="section2">
+    <div class="container">
+<div style="text-align:center">
+  <p style="font-size:13px;">WHAT WE DO</p>
+
+<p style="font-size:25px;"> When it comes to anything </p>
+<p style="font-size:25px;">computer and computer related</p>
+  <p> <span style="display:inline-block; border-bottom:1px solid #00BCD4; padding-bottom:10px;  font-size:25px;"> we've got you </span> </p>
+</div>
+</div>
+<div class="container">
+  <div style="text-align:center">
+  <img src="ClipartKey_1188251.png" width="50" height="50"  alt="profile.png">
+  <p><strong>Laptop Repairs</strong></p>
+<p>We specialize in fixing laptops/computers</p>
+  <p>both software and hardware issues</p>
+  </div>
+</div>
+<div class="container">
+    <div style="text-align:center">
+  <img src="webba.png" width="50" height="50" alt="laptopsale.png">
+<p><b>Web Design</b></p>
+  <p>We design and build all forms of websites</p>
+    </div>
+    </div>
+
+<div class="container">
+  <div style="text-align:center">
+  <img src="graphics.png" width="50" height="50" alt="graphics.png">
+ 
+<p><b>Graphics Design</b></p>
+  <p>Outstanding graphics design creation</p>
+  </div>
+  </div>
+  <div class="container">
+    <div style="text-align:center">
+  <img src="laptopsale.png" width="50" height="50" alt="laptopsale.png">
+  
+<p><b>Sales of Laptops</b></p>
+  <p>We deal on sales of all kinds of laptops/computers</p>
+    </div>
+    </div>
+
+  <div class="container">
+    <div style="text-align:center">
+  <img src="videoedit.png" width="50" height="50" alt="videoedit.png">
+
+<p><b>Video Editing</b></p>
+<p>All forms of professional video and picture editing</p>
+
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="main3">
+
+      <p style="font-size:18px; position:relative; top:10px;  text-align:left; background:#FF0000;color:white;"><b>Popular deals</b> </p>
+      
+		    
+
+<div class="row">
+  <div class="column">
+    <a href="https://enigterry.github.io/img1.html"><img src="1.jpg" alt="hp" style="width:100%" <p>Lenovo Ideapad I...</p> <p> &#8358; 174,000</p> </a>
+  </div>
+  <div class="column">
+    <img src="2.jpg" alt="lenovo laptop" style="width:100%" <p>Hp STREAM 11 INTEL</p> <p>CELERON 4GB RAM 32G...</p> <p> &#8358; 138,900</p> 
+  </div>
+  <div class="column">
+    <img src="msi1-1.jpg" alt="msid" style="width:100%" <p> Msi GAMING TITAN GT75</p> <p> Intel Core I7 256GB...</p> <p> &#8358; 795,000 </p>
+	 </div>
+	 <div class="column">
+	   <img src="3.jpg" alt="lenovo yoga" style="width:100%" <p> Lenovo YOGA C7</p> <p> &#8358; 371,000 </p>
+  </div>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</div>
+  
+</div>
+<div class="main9">
+  <div style="text-align:left">
+     <p style="font-size:20px; color:red;"><b>HINT OF THE DAY</b></p>
+     <p>How To Install Any Windows On Your Computer/laptop<p>
+  </div>
+  <p><b>1. Acquire whichever windows installation software you require, on cd or usb.  </b><br>
+    This could be windows 7, 8, 9 or 10 all of which are available at EnigteeWorld.</p>
+  <p><b>2. Put the windows cd into the cd rom or insert the usb into the usb port</b> <br>
+    Make sure your system is fully charged before starting installation. Press the esc or f9 or f3 key depending on your system to enter the cd boot mode. A black screen will appear showing the prompt 'press any key to boot from cd' wait for a few seconds and the windows installation menu will appear. </p>
+  <p><b>3. Follow the instructions on the screen to install windows</b> <br>
+    You can decide to delete the current partition, create a new one or install on top the current OS on the system and then proceed to installing windows</p> <p> <b>And you are done, when windows has finished installing, you can install various apps like antivirus etc. to your needs </b></p>
+      
+     
+  </div>
+    <div class="main4">
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://3-238-204-52.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      
+      </div>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://pinterest.com"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+</footer>
+
 <script>
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -288,9 +539,23 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
+    <script>
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+
+    <script id="dsq-count-scr" src="//3-238-204-52.disqus.com/count.js" async></script>
+
+  
 </body>
 </html>
