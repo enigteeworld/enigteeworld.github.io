@@ -181,11 +181,18 @@ body, html {
 " placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="_replyto" placeholder="Your email.." required></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Street Address" required name="Street Address"></p>
-	<p><input class="w3-input w3-border" type="text"   placeholder="City" required name="City"</p>
+	<p><input class="w3-input w3-border" type="text"   placeholder="City" required name="City"></p>
   <p><input class="w3-input w3-border" type="text\
 					     " placeholder="State" required name="State"></p>
   <p><input class="w3-input w3-border" type="text\
-" placeholder="Postal Code" required name="Postal Code"></p>
+					     " placeholder="Postal Code" required name="Postal Code"></p>
+<p><input class="w3-input w3-border"><select name="plans" required="">
+        <option value="Select" selected="" disabled="">Plans</option>
+        <option value="BS">Basic</option>
+        <option value="PR">Pro</option>
+        <option value="PM">Premieum</option>
+	</select></p>
+  
    
   <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('signup').style.display='none'"> Sign Up</button>
   </form>
@@ -201,9 +208,12 @@ body, html {
       <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
       <h2 class="w3-wide"> Subscribe</h2>
       <p>Have questions?<br>Contact me directly by mail..</p>
+      <form action="https://formspree.io/f/mleanwoz" method="POST">
+	<input type="hidden" name="_subject" value="Contact request from personal website" />
       <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
       <p><input class="w3-input w3-border" type="text"  placeholder="Type your message"></p>
       <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'"> Subscribe</button>
+      </form>
       </div>
   </div>
 </div>
@@ -319,7 +329,8 @@ body, html {
           <span class="w3-opacity">for 6 months</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-   <p> <a href="https://enigteeworld.github.io/signup.html" class="w3-button w3-black w3-padding-large">Sign Up</a></p>
+   <p><button class="w3-button w3-black w3-paddi\
+ng-large" onclick="document.getElementById('signup').style.display='block'">Sign Up </button> </p>
         </li>
       </ul>
     </div>
@@ -336,7 +347,7 @@ body, html {
           <span class="w3-opacity">per annum</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-     	<p><a href="https://enigteeworld.github.io/signup.html" class="w3-button w3-black w3-padding-large">Sign Up</a></p>
+     	<p><button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('signup').style.display='block'">Sign Up </button> </p>
         </li>
       </ul>
     </div>
