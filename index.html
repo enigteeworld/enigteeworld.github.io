@@ -42,14 +42,20 @@ left: 48%;
   }
 }
   
-.spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #483248;
-z-index: 999999;
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-50px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-50px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
 
 
@@ -71,9 +77,12 @@ body, html {
 }
 </style>
 <body>
+ <button onclick="animateFunction()">Animate</button>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+ 
 	<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+ <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
@@ -432,6 +441,7 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </footer>
+</div>
  
 <script>
 // Modal Image Gallery
@@ -461,16 +471,9 @@ function w3_close() {
 }
 </script>
 <script>
-$(document).ready(function() {
-//Preloader
-preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
+function animateFunction() {
+  document.getElementById("myDiv").style.display = "block";
 }
-hidePreloader();
-});
 </script>
-
 </body>
 </html>
